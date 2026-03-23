@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Card de Perfil</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 12px;
+      width: 280px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .card h2 {
+      font-size: 1.25rem;
+      margin: 12px 0 4px;
+      color: #222;
+    }
+
+    .profissao {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 16px;
+    }
+
+    .icon {
+      width: 16px;
+      height: 16px;
+      color: currentColor; /* Herda a cor do texto */
+    }
+
+    .card button {
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+
+    .card button:hover {
+      background-color: #0056b3;
+    }
+
+    .card button:focus {
+      outline: 2px solid #000;
+      outline-offset: 2px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img 
+      src="https://i.postimg.cc/sQP2T6fS/justin-negro.jpg" 
+      alt="Foto de perfil de João Silva"
+      loading="lazy"
+    >
+
+    <h2>João Silva</h2>
+
+    <p class="profissao">
+      <svg xmlns="http://www.w3.org/2000/svg" 
+           fill="none" 
+           viewBox="0 0 24 24" 
+           stroke-width="1.5" 
+           stroke="currentColor" 
+           class="icon">
+        <path stroke-linecap="round" 
+              stroke-linejoin="round" 
+              d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+      </svg>
+      Desenvolvedor Front-end
+    </p>
+
+    <button>Ver portfólio</button>
+  </div>
+
+</body>
+</html>
